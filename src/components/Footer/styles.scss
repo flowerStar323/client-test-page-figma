@@ -1,0 +1,85 @@
+footer.page-footer {
+  background-color: var(--primary);
+  color: white;
+}
+
+footer.page-footer > section:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  margin-bottom: 0 !important;
+  & > div.first {
+    width: 675px;
+    height: 320px;
+    & > div.wca {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 2;
+    }
+    & > ul {
+      list-style-type: none;
+      & > li {
+        display: inline-block;
+        & > a {
+          color: inherit;
+          font-size: 2rem;
+        }
+      }
+    }
+    & > p {
+      line-height: 2;
+    }
+    & > div.find-and-follow {
+      line-height: 3;
+      font-weight: 500;
+    }
+  }
+  & > ul.quick-links {
+    list-style-type: none;
+    width: 135px;
+    & > h4 {
+      font-weight: 600;
+      line-height: 3;
+      color: inherit;
+    }
+    & > li {
+      line-height: 2;
+      text-align: left;
+      & > a {
+        color: var(--white1);
+      }
+    }
+  }
+  & > div.contacts {
+    width: 380px;
+  }
+}
+
+footer.page-footer > section:last-of-type {
+  line-height: 4rem;
+  height: 4rem;
+  text-align: center;
+  border-top: 1px solid var(--white1);
+}
+
+footer.page-footer div.contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  & > div:first-of-type {
+    font-size: 2rem;
+    line-height: 2rem;
+    height: fit-content;
+    margin-right: 1.5rem;
+  }
+  & > div:last-of-type {
+    & > h5 {
+      font-size: 1.1rem;
+      line-height: 2;
+      color: inherit;
+    }
+    & > div {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.top-bar {
+  height: 65px;
+  line-height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white1);
+}
+
+.top-bar .main-nav {
+  width: 717px;
+  & > ul {
+    list-style-type: none;
+    & > li {
+      display: inline-block;
+      padding: 0 1rem;
+      font-weight: 500;
+      & > a {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.top-bar div.logo {
+  width: 140px;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.top-bar button.get-started {
+  width: 180px;
+  height: 50px;
+  background-color: var(--primar_200);
+  color: var(--primary);
+  font-weight: 600;
+}

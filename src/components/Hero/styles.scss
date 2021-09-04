@@ -1,0 +1,35 @@
+.hero {
+  height: 480px;
+  display: flex;
+  color: var(--white1);
+}
+
+.hero-wrapper {
+  height: 885px;
+  background-repeat: no-repeat;
+  background-size: 1406px 885px;
+}
+
+.hero > div {
+  width: 50%;
+}
+
+.hero > div.left-side {
+  & > div:first-of-type {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.5;
+  }
+  & > div:nth-child(2) {
+    font-size: 1rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+  }
+}
+
+.hero > div.right-side {
+  & > img {
+    width: 725px;
+    height: 440px;
+  }
+}

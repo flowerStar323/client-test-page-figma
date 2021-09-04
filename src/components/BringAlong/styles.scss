@@ -1,0 +1,81 @@
+.bring-along {
+  display: flex;
+  align-items: center;
+  height: 890px;
+  & > div {
+    width: 50%;
+  }
+}
+
+.bring-along > .left-side {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(10, 75px);
+  grid-gap: 50px;
+  background-size: auto 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.bring-along .tech-card {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0px 0px 8px var(--grey1);
+  background-color: var(--white1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding-right: 3rem;
+  & > div {
+    width: fit-content;
+    height: fit-content;
+    & > img {
+      width: 122px;
+      height: 122px;
+    }
+    & > div {
+      width: 122px;
+      height: 2rem;
+      line-height: 2rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+}
+
+.bring-along > .right-side {
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 3rem;
+  & > h3 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    width: 490px;
+  }
+
+  & > div {
+    display: flex;
+    & article {
+      width: 260px;
+      height: 300px;
+      & > div > img {
+        width: 108px;
+        height: 108px;
+      }
+      & > h3 {
+        font-size: 1.5rem;
+        line-height: 2;
+        font-weight: 500;
+      }
+      & > p {
+        line-height: 2;
+      }
+    }
+  }
+}

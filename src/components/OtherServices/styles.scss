@@ -1,0 +1,44 @@
+.other-services {
+  display: flex;
+  align-items: center;
+  & > div {
+    width: 50%;
+  }
+}
+
+.other-services > div:first-of-type {
+  & > img {
+    width: 704px;
+    height: 493px;
+  }
+}
+
+.other-services > div:last-of-type {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.other-services div.service {
+  display: flex;
+  margin-bottom: 1rem;
+  & > div:first-of-type {
+    width: 100px;
+    & > img {
+      width: 88px;
+      height: 88px;
+    }
+  }
+  & > div:last-of-type {
+    width: 100%;
+    & > h3 {
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+    & > p {
+      line-height: 2;
+    }
+  }
+}

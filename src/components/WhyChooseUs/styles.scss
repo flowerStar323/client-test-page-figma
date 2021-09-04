@@ -1,0 +1,62 @@
+.why-choose-us {
+  & h5,
+  h4 {
+    text-align: center;
+  }
+  & h5 {
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  & h4 {
+    font-weight: 600;
+    line-height: 2;
+    margin-bottom: 2rem;
+  }
+}
+.why-choose-us > .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.why-choose-us .card {
+  background-color: white;
+  border: none;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: inherit;
+  width: 450px;
+  height: 460px;
+  padding: 2rem;
+  margin: 0 1rem 1rem 0;
+  box-shadow: 0px 0px 8px var(--grey1);
+  border-radius: 15px;
+  &:focus {
+    border: 2px solid var(--primary);
+    outline: none;
+  }
+  & > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    & > div:first-of-type {
+      height: fit-content;
+      padding: 0;
+      & > img {
+        width: 85px;
+        height: 85px;
+      }
+    }
+    & > h3 {
+      font-size: 1.6rem;
+      line-height: 2;
+      font-weight: 500;
+    }
+    & > p {
+      line-height: 2;
+      height: 100%;
+      word-spacing: 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+}
