@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 footer.page-footer {
   background-color: var(--primary);
   color: white;
@@ -8,6 +10,7 @@ footer.page-footer > section:first-of-type {
   justify-content: space-between;
   padding: 2rem 0;
   margin-bottom: 0 !important;
+
   & > div.first {
     width: 675px;
     height: 320px;
@@ -18,11 +21,13 @@ footer.page-footer > section:first-of-type {
     }
     & > ul {
       list-style-type: none;
+      display: flex;
       & > li {
         display: inline-block;
         & > a {
           color: inherit;
-          font-size: 2rem;
+          font-size: 36px;
+          margin-right: 24px;
         }
       }
     }
@@ -32,19 +37,22 @@ footer.page-footer > section:first-of-type {
     & > div.find-and-follow {
       line-height: 3;
       font-weight: 500;
+      font-size: 20px;
     }
   }
   & > ul.quick-links {
     list-style-type: none;
-    width: 135px;
+    line-height: 2;
     & > h4 {
       font-weight: 600;
-      line-height: 3;
+      font-size: 24px;
       color: inherit;
     }
     & > li {
       line-height: 2;
       text-align: left;
+      font-size: 22px;
+      font-weight: 500;
       & > a {
         color: var(--white1);
       }
@@ -52,22 +60,65 @@ footer.page-footer > section:first-of-type {
   }
   & > div.contacts {
     width: 380px;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media (max-width: $tabletBreakpoint2) {
+    & > div.first {
+      width: 500px;
+      height: auto;
+      padding-bottom: 20px;
+      & > div.wca {
+        font-size: 1.5rem;
+      }
+    }
+    & > ul.quick-links {
+      & > h4 {
+        font-size: 18px;
+      }
+      & > li {
+        line-height: 1.5;
+        font-size: 18px;
+      }
+    }
+    & > div.contacts {
+      height: fit-content;
+      width: fit-content;
+    }
+  }
+  @media (max-width: $tabletBreakpoint) {
+    display: block;
+    & > div.first {
+      width: 90%;
+      margin: 0 auto;
+    }
+    & > ul.quick-links {
+      width: 90%;
+      margin: 0 auto 1rem auto;
+    }
+    & > div.contacts {
+      width: 90%;
+      margin: 0 auto 1rem auto;
+      justify-content: flex-start;
+    }
   }
 }
 
 footer.page-footer > section:last-of-type {
-  line-height: 4rem;
   height: 4rem;
-  text-align: center;
-  border-top: 1px solid var(--white1);
+  border-top: 1px solid hsla(0, 0%, 100%, 0.68);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer.page-footer div.contact {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
   & > div:first-of-type {
-    font-size: 2rem;
+    font-size: 36px;
     line-height: 2rem;
     height: fit-content;
     margin-right: 1.5rem;
@@ -80,6 +131,14 @@ footer.page-footer div.contact {
     }
     & > div {
       font-size: 1rem;
+    }
+  }
+
+  @media (max-width: $tabletBreakpoint2) {
+    & > div:first-of-type {
+      font-size: 24px;
+      line-height: 1rem;
+      margin-right: 1rem;
     }
   }
 }

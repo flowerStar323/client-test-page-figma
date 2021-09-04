@@ -2,6 +2,13 @@
   width: 1403px;
   margin: auto;
   margin-bottom: 4rem;
+  @media (max-width: $tabletBreakpoint2) {
+    width: 1025px;
+  }
+  @media (max-width: $tabletBreakpoint) {
+    width: 100%;
+    padding: 0 1rem;
+  }
 }
 
 .top_bar_bg {

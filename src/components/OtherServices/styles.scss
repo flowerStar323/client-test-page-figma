@@ -1,23 +1,53 @@
+@import "../../styles/variables";
+
 .other-services {
   display: flex;
   align-items: center;
-  & > div {
-    width: 50%;
+  justify-content: space-between;
+  @media (max-width: $tabletBreakpoint2) {
+    align-items: flex-start;
+  }
+  @media (max-width: $tabletBreakpoint) {
+    display: block;
   }
 }
 
 .other-services > div:first-of-type {
+  width: 50%;
   & > img {
     width: 704px;
     height: 493px;
+  }
+  @media (max-width: $tabletBreakpoint2) {
+    & > img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-width: $tabletBreakpoint) {
+    width: 100%;
+    & > img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
   }
 }
 
 .other-services > div:last-of-type {
   height: 400px;
+  width: 640px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: $tabletBreakpoint2) {
+    width: 45%;
+    height: auto;
+  }
+  @media (max-width: $tabletBreakpoint) {
+    width: 100%;
+    margin: 3rem 0;
+  }
 }
 
 .other-services div.service {
@@ -25,6 +55,7 @@
   margin-bottom: 1rem;
   & > div:first-of-type {
     width: 100px;
+    margin-right: 1.5rem;
     & > img {
       width: 88px;
       height: 88px;
@@ -34,11 +65,43 @@
     width: 100%;
     & > h3 {
       font-weight: 500;
-      font-size: 1.5rem;
-      line-height: 1.5;
+      font-size: 36px;
+      line-height: 1.8;
     }
     & > p {
       line-height: 2;
+      font-size: 22px;
+    }
+  }
+  @media (max-width: $tabletBreakpoint2) {
+    width: fit-content;
+    & > div:first-of-type {
+      width: 60px;
+      margin-right: 0.5rem;
+      & > img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    & > div:last-of-type {
+      & > h3 {
+        font-size: 24px;
+        line-height: 1;
+      }
+      & > p {
+        line-height: 2;
+        font-size: 18px;
+      }
+    }
+  }
+  @media (max-width: $tabletBreakpoint) {
+    & > div:last-of-type {
+      & > h3 {
+        font-size: 24px;
+      }
+      & > p {
+        font-size: 18px;
+      }
     }
   }
 }

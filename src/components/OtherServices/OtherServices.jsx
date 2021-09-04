@@ -22,10 +22,11 @@ export function OtherServices() {
             heading="Cloud commerce"
             content={
               <>
-                <p style={{ fontWeight: "500" }}>
+                <span style={{ fontWeight: "500" }}>
                   Early stage startup solutions
-                </p>
-                <p>Launch your startup the easy way</p>
+                </span>
+                <br />
+                <span>Launch your startup the easy way</span>
               </>
             }
           />

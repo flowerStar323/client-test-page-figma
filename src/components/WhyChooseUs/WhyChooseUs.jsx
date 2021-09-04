@@ -16,7 +16,7 @@ export function WhyChooseUs() {
         <Card
           icon={{ src: ux, alt: "User Experience" }}
           heading="User Experience Design"
-          content="Add beautiful intuitive designs that increase hapines to your product"
+          content="Add beautiful intuitive designs that increase user hapiness to your product"
           actionLinkA={{ href: "/" }}
           actionLinkB={{ href: "/" }}
         />
@@ -37,7 +37,7 @@ export function WhyChooseUs() {
         <Card
           icon={{ src: blockchain, alt: "Blockchain" }}
           heading="Blockchain development"
-          content="Access firepower for your blockchain product. We specialize in modern Etherium stack"
+          content="Access firepower for your blockchain product. We specialize in modern Ethereum stack"
           actionLinkA={{ href: "/" }}
           actionLinkB={{ href: "/" }}
         />

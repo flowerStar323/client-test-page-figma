@@ -1,23 +1,39 @@
+@import "../../styles//variables";
+
 .top-bar {
   height: 65px;
   line-height: 65px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   color: var(--white1);
+  @media (max-width: $tabletBreakpoint) {
+    display: block;
+    height: auto;
+  }
 }
 
 .top-bar .main-nav {
   width: 717px;
   & > ul {
     list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     & > li {
-      display: inline-block;
-      padding: 0 1rem;
       font-weight: 500;
       & > a {
         color: inherit;
       }
+    }
+  }
+  @media (max-width: $tabletBreakpoint2) {
+    width: 600px;
+  }
+  @media (max-width: $tabletBreakpoint) {
+    width: 100%;
+    & > ul {
+      flex-wrap: wrap;
     }
   }
 }
@@ -34,4 +50,9 @@
   background-color: var(--primar_200);
   color: var(--primary);
   font-weight: 600;
+  @media (max-width: $tabletBreakpoint3) {
+    display: block;
+    border: 1px solid var(--white1);
+    color: white !important;
+  }
 }

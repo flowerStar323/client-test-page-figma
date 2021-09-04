@@ -1,21 +1,44 @@
+@import "../../styles//variables";
+
 .bring-along {
   display: flex;
   align-items: center;
   height: 890px;
-  & > div {
-    width: 50%;
+  @media (max-width: $tabletBreakpoint2) {
+    height: 500px;
+  }
+  @media (max-width: $tabletBreakpoint) {
+    display: block;
+    height: auto;
   }
 }
 
 .bring-along > .left-side {
   height: 100%;
+  width: 60%;
   display: grid;
   grid-template-columns: repeat(2, 300px);
   grid-template-rows: repeat(10, 75px);
-  grid-gap: 50px;
+  padding: 1rem;
+  grid-row-gap: 50px;
+  grid-column-gap: 60px;
   background-size: auto 100%;
   background-position: right;
   background-repeat: no-repeat;
+  @media (max-width: $tabletBreakpoint2) {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(10, 50px);
+    background-size: 0px 0px;
+    grid-row-gap: 30px;
+    grid-column-gap: 40px;
+  }
+  @media (max-width: $tabletBreakpoint) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-size: 0px 0px;
+  }
 }
 
 .bring-along .tech-card {
@@ -27,10 +50,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  padding-right: 3rem;
   & > div {
-    width: fit-content;
-    height: fit-content;
     & > img {
       width: 122px;
       height: 122px;
@@ -39,15 +59,30 @@
       width: 122px;
       height: 2rem;
       line-height: 2rem;
-      font-size: 1.5rem;
+      font-size: 26px;
       font-weight: 500;
       text-align: center;
+    }
+  }
+  @media (max-width: $tabletBreakpoint2) {
+    width: 200px;
+    height: 200px;
+    & > div {
+      & > img {
+        width: 100px;
+        height: 100px;
+      }
+      & > div {
+        width: 100px;
+        font-size: 18px;
+      }
     }
   }
 }
 
 .bring-along > .right-side {
   height: 65%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -76,6 +111,30 @@
       & > p {
         line-height: 2;
       }
+    }
+  }
+  @media (max-width: $tabletBreakpoint2) {
+    height: fit-content;
+    & > h3 {
+      font-size: 1.5rem;
+      line-height: 3;
+    }
+  }
+  @media (max-width: $tabletBreakpoint) {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-left: 0;
+    & > h3 {
+      font-size: 1.5rem;
+      width: auto;
+    }
+    & > div {
+      display: block;
+      margin: 1rem auto;
+    }
+    & > a {
+      margin: auto;
     }
   }
 }

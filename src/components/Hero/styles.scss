@@ -1,13 +1,28 @@
+@import "../../styles/variables";
+
 .hero {
-  height: 480px;
+  height: 478px;
   display: flex;
+  justify-content: space-between;
   color: var(--white1);
+  @media (max-width: $tabletBreakpoint) {
+    display: block;
+    height: auto;
+  }
 }
 
 .hero-wrapper {
   height: 885px;
   background-repeat: no-repeat;
   background-size: 1406px 885px;
+  @media (max-width: $tabletBreakpoint) {
+    height: auto;
+  }
+  @media (max-width: $tabletBreakpoint2) {
+    height: 600px;
+    background-size: auto 100%;
+    background-color: var(--primary);
+  }
 }
 
 .hero > div {
@@ -15,15 +30,34 @@
 }
 
 .hero > div.left-side {
+  width: 700px;
   & > div:first-of-type {
-    font-size: 3rem;
+    font-size: 53px;
     font-weight: 800;
     line-height: 1.5;
   }
   & > div:nth-child(2) {
-    font-size: 1rem;
+    width: 611px;
+    font-size: 18px;
     line-height: 2;
     margin-bottom: 2rem;
+  }
+  @media (max-width: $tabletBreakpoint2) {
+    & > div:first-of-type {
+      font-size: 24px;
+    }
+    & > div:nth-child(2) {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: $tabletBreakpoint) {
+    width: 100%;
+    & > div:first-of-type {
+      font-size: 1.5rem;
+    }
+    & > div:nth-child(2) {
+      width: auto;
+    }
   }
 }
 
@@ -31,5 +65,23 @@
   & > img {
     width: 725px;
     height: 440px;
+    box-shadow: 10px 0px 15px var(--grey1);
+    border-radius: 15px;
+  }
+  @media (max-width: $tabletBreakpoint2) {
+    & > img {
+      width: 100%;
+      height: auto;
+      box-shadow: 0px 0px 15px var(--grey1);
+    }
+  }
+  @media (max-width: $tabletBreakpoint) {
+    width: 100%;
+    margin: 2rem 0;
+    max-width: 500px;
+    display: none;
+    & > img {
+      width: 100%;
+    }
   }
 }
