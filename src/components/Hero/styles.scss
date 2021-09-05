@@ -17,6 +17,7 @@
   height: 885px;
   background-repeat: no-repeat;
   background-size: 1406px 885px;
+  padding-top: 1rem;
   @media (max-width: $tabletBreakpoint) {
     height: auto;
     background-color: var(--primary);
@@ -66,7 +67,6 @@
 .hero > div.right-side {
   & > img {
     width: 725px;
-    height: 440px;
     box-shadow: 10px 0px 15px var(--grey1);
     border-radius: 15px;
   }

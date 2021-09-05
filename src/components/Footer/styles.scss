@@ -92,7 +92,7 @@ footer.page-footer > section:first-of-type {
     }
   }
   @media (max-width: $tabletBreakpoint) {
-    display: block;
+    flex-direction: column;
     & > div.first {
       width: 90%;
       margin: 0 auto;
@@ -103,6 +103,7 @@ footer.page-footer > section:first-of-type {
     }
     & > div.contacts {
       width: 90%;
+      height: fit-content;
       margin: 0 auto 1rem auto;
       justify-content: flex-start;
     }
