@@ -13,6 +13,7 @@ import Article from "./Article";
 export function BringAlong() {
   return (
     <section className="page-section bring-along">
+      <h3>Bring along your favourite technology</h3>
       <div
         className="left-side"
         style={{ backgroundImage: `url(${bring_along_bg})` }}

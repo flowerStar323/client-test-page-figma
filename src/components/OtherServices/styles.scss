@@ -19,6 +19,8 @@
     height: 493px;
   }
   @media (max-width: $tabletBreakpoint2) {
+    width: fit-content;
+    margin: auto;
     & > img {
       max-width: 100%;
       height: auto;
@@ -26,6 +28,8 @@
   }
   @media (max-width: $tabletBreakpoint) {
     width: 100%;
+    width: fit-content;
+    margin: auto;
     & > img {
       width: 100%;
       max-width: 600px;
@@ -45,8 +49,8 @@
     height: auto;
   }
   @media (max-width: $tabletBreakpoint) {
-    width: 100%;
-    margin: 3rem 0;
+    width: fit-content;
+    margin: 3rem auto;
   }
 }
 

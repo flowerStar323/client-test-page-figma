@@ -4,12 +4,23 @@
   display: flex;
   align-items: center;
   height: 890px;
+  & > h3 {
+    font-size: 30px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
   @media (max-width: $tabletBreakpoint2) {
     height: 500px;
   }
   @media (max-width: $tabletBreakpoint) {
     display: block;
     height: auto;
+    & > h3 {
+      display: block;
+      margin: 20px 0;
+    }
   }
 }
 
@@ -22,7 +33,7 @@
   padding: 1rem;
   grid-row-gap: 50px;
   grid-column-gap: 60px;
-  background-size: auto 100%;
+  background-size: 610px 875px;
   background-position: right;
   background-repeat: no-repeat;
   @media (max-width: $tabletBreakpoint2) {
@@ -126,8 +137,7 @@
     text-align: center;
     padding-left: 0;
     & > h3 {
-      font-size: 1.5rem;
-      width: auto;
+      display: none;
     }
     & > div {
       display: block;
