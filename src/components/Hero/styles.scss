@@ -17,11 +17,11 @@
   background-size: 1406px 885px;
   @media (max-width: $tabletBreakpoint) {
     height: auto;
+    background-color: var(--primary);
   }
   @media (max-width: $tabletBreakpoint2) {
     height: auto;
-    background-size: auto 100%;
-    background-color: var(--primary);
+    background-size: 1000px 600px;
   }
 }
 
