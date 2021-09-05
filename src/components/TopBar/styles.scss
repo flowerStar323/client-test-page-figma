@@ -52,6 +52,7 @@
   color: var(--primary);
   font-weight: 600;
   font-size: 20px;
+  border-radius: 50px;
   @media (max-width: $tabletBreakpoint) {
     font-size: 18px;
     width: fit-content;

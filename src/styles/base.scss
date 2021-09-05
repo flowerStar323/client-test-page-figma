@@ -24,8 +24,6 @@ button,
 a {
   border: none;
   cursor: pointer;
-  height: 50px;
-  border-radius: 25px;
   color: inherit;
 }
 
@@ -51,6 +49,7 @@ a {
     font-weight: 500;
     width: 180px;
     text-align: center;
+    border-radius: 50px;
     @media (max-width: $mobileBreakpoint) {
       padding: 0 0.5rem;
       height: 45px;
