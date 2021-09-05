@@ -113,6 +113,10 @@ footer.page-footer > section:last-of-type {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 21px;
+  @media (max-width: $tabletBreakpoint) {
+    font-size: 18px;
+  }
 }
 
 footer.page-footer div.contact {

@@ -42,7 +42,7 @@ export function BringAlong() {
           title="AngularJs"
           style={{
             gridColumn: "1 / span 1",
-            gridRow: "5 / span 1",
+            gridRow: "7 / span 1",
           }}
         />
         <TechCard
@@ -51,7 +51,7 @@ export function BringAlong() {
           title="Node Js"
           style={{
             gridColumn: "2 /span 1",
-            gridRow: "4 / span 1",
+            gridRow: "6 / span 1",
           }}
         />
       </div>

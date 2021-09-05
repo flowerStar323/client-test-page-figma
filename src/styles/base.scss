@@ -26,6 +26,7 @@ a {
   cursor: pointer;
   height: 50px;
   border-radius: 25px;
+  color: inherit;
 }
 
 a {
@@ -33,6 +34,7 @@ a {
   &.outline {
     border: 2px solid var(--primary);
     background-color: var(--white1);
+    color: var(--primary);
   }
   &.filled {
     background-color: var(--primary);
