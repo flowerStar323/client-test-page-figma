@@ -49,6 +49,8 @@ a {
     margin: 0.3rem;
     padding: 0 1.5rem;
     font-weight: 500;
+    width: 180px;
+    text-align: center;
     @media (max-width: $mobileBreakpoint) {
       padding: 0 0.5rem;
       height: 45px;

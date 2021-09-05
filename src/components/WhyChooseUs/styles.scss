@@ -36,7 +36,9 @@
   margin: 0 1.1rem 2rem 0;
   box-shadow: 0px 0px 8px var(--grey1);
   border-radius: 15px;
-  &:focus {
+  transition: border 100ms;
+  &:focus,
+  &:hover {
     border: 2px solid var(--primary);
     outline: none;
   }
