@@ -20,31 +20,33 @@ export function Footer() {
             silicon valley led by FAANG engineers who have delivered the highest
             echelons of technology
           </p>
-          <div className="find-and-follow">
-            Find and follow White Cloud Apps
+          <div>
+            <div className="find-and-follow">
+              Find and follow White Cloud Apps
+            </div>
+            <ul className="sm-links">
+              <li>
+                <a href="/">
+                  <FaFacebook />
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <FaInstagram />
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <FaTwitter />
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul>
-            <li>
-              <a href="/">
-                <FaFacebook />
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <FaInstagram />
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <FaTwitter />
-              </a>
-            </li>
-          </ul>
         </div>
         <ul className="quick-links">
           <h4>Quick Links</h4>
